@@ -14,8 +14,8 @@ Tags: Best theme ever
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100&display=swap');
 
-body{
-    background:rgb(32, 32, 32);
+body {
+    background: rgb(32, 32, 32);
 }
 
 
@@ -36,13 +36,39 @@ a {
 
 }
 
+.post_exerpt_to_show {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    height: 100%;
+  
+    background-color: rgba(32, 32, 32, 0.8);
+    bottom: 0%;
+    right: 0px;
+    font-size: 0.4em;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    opacity: 0;
+}
+.post_exerpt_to_show p{
+    vertical-align: middle;
+    display: inline-block;
+    padding-top:3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
 #an_a_container {
     margin-bottom: -1em;
     overflow: auto;
     display: inline-block;
 }
-
-
 
 .maincontainer {
     text-align: center;
@@ -98,10 +124,14 @@ a {
     overflow-y: hidden;
 }
 
-.post_in_ul:hover {
-    opacity: 0.8;
+.post_in_ul:hover .post_exerpt_to_show {
+    opacity: 1;
+    transition: 0.6s;
 }
-
+.post_in_ul:hover .post_title_on_image {
+    opacity:0;
+    transition: 0.6s;
+}
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 9em;
