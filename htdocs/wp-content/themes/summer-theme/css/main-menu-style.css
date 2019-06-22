@@ -1,0 +1,35 @@
+/*
+* A style sheet for main menu
+*
+*/
+
+.main_nav{
+    height:100%;
+    
+    font-size:3em;
+    color:white;
+    background-color:rgb(32, 32, 32);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+vertical-align:center;
+}
+.page_item.page-item-2{
+   padding-bottom:0.5em;
+   padding-top:0.5em;
+}
+.main_nav img{
+    vertical-align:bottom;
+}
+
+.main_nav a:link, a:visited,a:hover, a:active  {
+  
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  .main_nav a:hover{
+color:rgb(30, 180, 240);
+  }
