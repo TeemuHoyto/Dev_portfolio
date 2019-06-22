@@ -19,7 +19,7 @@ body{
 }
 
 
-.link_on_image {
+a {
     color: white;
     visibility: visible;
 }

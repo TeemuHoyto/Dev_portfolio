@@ -11,7 +11,7 @@ function st_theme_scripts()
     $js_mod_time  = file_exists('ST_ASSET_PATH' . '/main.js') ?
         filemtime('ST_ASSET_PATH' . '/main.js') : ST_THEME_VERSION;
 
-    wp_enqueue_script('image-hover-script', get_template_directory_uri() . '/js/image_hover_reveal.js');
+        wp_enqueue_script('js',get_template_directory_uri() . '/js/image_hover_reveal.js','','',true);
 
     wp_enqueue_style('reset-styles', get_template_directory_uri() . '/css/reset.css', array(), null, 'all');
     wp_enqueue_style('summertheme-scripts',  get_template_directory_uri() . 'assets/css/app.css');

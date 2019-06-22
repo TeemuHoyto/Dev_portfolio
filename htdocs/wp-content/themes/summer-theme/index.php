@@ -19,11 +19,11 @@ get_header(); ?>
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
-            <ul class="post_in_ul">
+            <ul class="post_in_ul" id="image_hide_show" >
 
                 <!-- <h3><a class="link_on_image" href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3> -->
                 <?php the_post_thumbnail('featured-large', get_the_ID()) ?>
-                <h3 class="post_title_on_image"><a class="link_on_image" href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
+                <h3 class="post_title_on_image" ><a id="link_on_image" href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
             </ul>
 
         <?php endwhile; ?>
