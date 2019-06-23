@@ -12,5 +12,6 @@ define( 'ST_THEME_VERSION', '0.0.0' );
 
 include_once get_template_directory() . '/src/assets.php';
 include_once get_template_directory() . '/src/event.php';
+include_once get_template_directory() . '/src/user_fields.php';
 
 

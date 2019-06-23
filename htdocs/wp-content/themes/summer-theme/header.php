@@ -17,6 +17,8 @@
         <div class="main_nav">
             <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
             <img class="header_img" id="Iso" src="/wp-content/themes/summer-theme/src/header/Rododendron.jpg">
+            <img class="header_arrow" id="Iso" src="/wp-content/themes/summer-theme/src/header/nuoli.png">
+
         </div>
         <?php
         wp_head();

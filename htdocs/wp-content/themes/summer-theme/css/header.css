@@ -20,5 +20,25 @@
 
 .header_img {
     width: 100%;
-    object-fit: contain:
+    object-fit: contain;
+}
+.header_arrow{
+    position: absolute;
+    bottom: 1em;
+    right: 40%;
+    left: 40%; 
+    animation: pulse 1s infinite;
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    
+}
+
+@keyframes pulse {
+  0% {
+    opacity:0.2;
+  }
+  100% {
+    opacity:0.8;
+  }
 }
