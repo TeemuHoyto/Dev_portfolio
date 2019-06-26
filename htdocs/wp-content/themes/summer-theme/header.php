@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -16,7 +18,18 @@
     <main>
         <div class="main_nav">
             <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-            <img class="header_img" id="Iso" src="/wp-content/themes/summer-theme/src/header/Rododendron.jpg">
+            <?php
+
+
+    $header_image_arr = the_post_thumbnail();
+
+if ($header_image_arr) {
+    $header_image_src = $header_image_arr['sizes']['HD'];
+} else {
+    $header_image_src = get_template_directory_uri() . '/wp-content/themes/summer-theme/src/header/Rododendron.jpg';
+}
+
+?>
             <img class="header_arrow" id="Iso" src="/wp-content/themes/summer-theme/src/header/nuoli.png">
 
         </div>

@@ -37,6 +37,14 @@ function admin_style() {
 add_theme_support('post-thumbnails');
 
 
+/**
+ * Add image size
+ */
+
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+    add_image_size( 'HD', 1920, 600, true ); // (cropped)
+}
 
 /*
 * Function to get post featured image  
