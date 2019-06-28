@@ -1,0 +1,85 @@
+.var_dump,
+.main_container_author {
+    color: white;
+    width: 60vw;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author_image {
+    width: 40vw;
+    height: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: block;
+}
+
+.author_name {
+    color: white;
+    font-size: 5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.author_species {
+    color: white;
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.author_p_field {
+
+    color: white;
+    width: auto;
+    font-size: 1.2em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.links_container_author_master {
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.author_p_field:hover {
+    color: rgb(2, 217, 255);
+}
+
+.links_container_author {
+
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left:0.1em;
+    padding-left:0.5em;
+    border-left: 1px solid white;
+}
+
+.links_container_author_left {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right:0.1em;
+    padding-right:0.5em;
+    border-right: 1px solid white;
+
+}
+
+.author_link_to {
+    display: inline-block;
+    width: max-content;
+}

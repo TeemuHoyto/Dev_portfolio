@@ -1,0 +1,32 @@
+.wp-admin .my_slider_1, .my_slider_2,
+.my_slider_3, .my_slider_4, .my_slider_5,
+.my_slider_6, .my_slider_7, .my_slider_8,
+.my_slider_9{
+    width: 90%;
+    height: 25px;
+    background: #6beeff;
+    outline: none;
+    opacity: 0.3;
+    transition: opacity .2s;
+  }
+  
+  .wp-admin .my_slider_1:hover,
+  .my_slider_2:hover, .my_slider_3:hover,
+  .my_slider_4:hover, .my_slider_5:hover,
+  .my_slider_6:hover, .my_slider_7:hover,
+  .my_slider_8:hover, .my_slider_9:hover  {
+    opacity: 1;
+  }
+  input[type=range]:after{
+    content: attr(value);
+    color: rgb(3, 137, 199);
+    position: absolute;
+    padding-top:0.8em;
+    font-size:2em;
+    font-family: 'Raleway', sans-serif;
+}
+#image_px{
+  border-radius: 100%;
+  width:50vw;
+  height:auto;
+}

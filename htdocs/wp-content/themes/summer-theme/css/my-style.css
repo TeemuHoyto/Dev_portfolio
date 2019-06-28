@@ -1,0 +1,137 @@
+/*
+Theme Name: Teemu Höytö Portfolio
+Theme URI:
+Author: Teemu Höytö
+Author URI: 
+Description: 
+Version: 0.01
+License: GNU General Public License v2 or later
+License URI: 
+Tags: Best theme ever
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100&display=swap');
+
+body {
+    background: rgb(32, 32, 32);
+}
+
+
+a {
+    color: white;
+    visibility: visible;
+}
+.link,
+.link:active,
+.link:hover,
+.link:focus {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+
+}
+
+.post_exerpt_to_show {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    height: 100%;
+  
+    background-color: rgba(32, 32, 32, 0.8);
+    bottom: 0%;
+    right: 0px;
+    font-size: 0.4em;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    opacity: 0;
+}
+.post_exerpt_to_show p{
+    vertical-align: middle;
+    display: inline-block;
+    padding-top:3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#an_a_container {
+    margin-bottom: -1em;
+    overflow: auto;
+    display: inline-block;
+}
+
+.maincontainer {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6vw;
+    column-count: 2;
+    column-gap: 0px;
+    column-rule: none;
+}
+
+.maincontainer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0em;
+}
+
+.post_title_on_image {
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.post-categories {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.post_in_ul {
+    position: relative;
+    overflow-y: hidden;
+}
+
+.post_in_ul:hover .post_exerpt_to_show {
+    opacity: 1;
+    transition: 0.6s;
+}
+.post_in_ul:hover .post_title_on_image {
+    opacity:0;
+    transition: 0.6s;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 9em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
