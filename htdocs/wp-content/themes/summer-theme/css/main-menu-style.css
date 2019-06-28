@@ -5,14 +5,13 @@
 
 .main_nav {
   height: 100%;
-
+  display: inline-block;
+  width: 100%;
   font-size: 3em;
   color: white;
   background-color: rgb(32, 32, 32);
   text-align: center;
   font-family: 'Raleway', sans-serif;
-
-  vertical-align: center;
 }
 
 .page_item.page-item-2 {
@@ -30,7 +29,8 @@ a:visited,
 a:active {
 
   color: rgb(255, 255, 255);
-
+  
+  max-width:10%;
   text-align: center;
   text-decoration: none;
 

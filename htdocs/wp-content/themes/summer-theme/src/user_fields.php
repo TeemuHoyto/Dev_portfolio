@@ -29,10 +29,26 @@ function extra_user_profile_fields($user)
         </tr>
 
         <tr>
+            <th><label for="link_to_linkedin"><?php esc_html_e('linkedin'); ?></label></th>
+            <td>
+                <input type="text" name="link_to_linkedin" id="link_to_linkedin" value="<?php echo esc_attr(get_the_author_meta('link_to_linkedin', $user->ID)); ?>" class="regular-text" /><br />
+                <span class="description"><?php esc_html_e('Please enter your linkedin.'); ?></span>
+            </td>
+        </tr>
+
+        <tr>
             <th><label for="Phone_number"><?php esc_html_e('Phone number'); ?></label></th>
             <td>
                 <input type="text" name="Phone_number" id="Phone_number" value="<?php echo esc_attr(get_the_author_meta('Phone_number', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Please enter your phone number.'); ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="E-mail-2"><?php esc_html_e('E-mail-2'); ?></label></th>
+            <td>
+                <input type="text" name="E-mail-2" id="E-mail-2" value="<?php echo esc_attr(get_the_author_meta('E-mail-2', $user->ID)); ?>" class="regular-text" /><br />
+                <span class="description"><?php esc_html_e('Please enter another E-mail.'); ?></span>
             </td>
         </tr>
 
@@ -47,7 +63,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="CSS skills % of perfection"><?php esc_html_e('CSS skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="CSS" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_1" id="CSS" value="<?php echo esc_attr(get_the_author_meta('CSS', $user->ID)); ?>">
+                <input type="range" name="CSS" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('CSS', $user->ID)); ?>" class="my_slider_1" id="CSS" >
                 <span class="description"><?php esc_html_e('CSS.'); ?></span>
             </td>
         </tr>
@@ -55,7 +71,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="HTML skills in % of perfection"><?php esc_html_e('HTML skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="HTML" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_2" id="HTML" value="<?php echo esc_attr(get_the_author_meta('HTML', $user->ID)); ?>">
+                <input type="range" name="HTML" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('HTML', $user->ID)); ?>" class="my_slider_2" id="HTML" >
                 <span class="description"><?php esc_html_e('HTML.'); ?></span>
             </td>
         </tr>
@@ -63,7 +79,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="JS skills in % of perfection"><?php esc_html_e('JS skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="JS" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_3" id="JS" value="<?php echo esc_attr(get_the_author_meta('JS', $user->ID)); ?>">
+                <input type="range" name="JS" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('JS', $user->ID)); ?>" class="my_slider_3" id="JS" >
                 <span class="description"><?php esc_html_e('JS.'); ?></span>
             </td>
         </tr>
@@ -71,7 +87,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="WP skills in % of perfection"><?php esc_html_e('WP skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="WP" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_4" id="WP" value="<?php echo esc_attr(get_the_author_meta('WP', $user->ID)); ?>">
+                <input type="range" name="WP" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('WP', $user->ID)); ?>" class="my_slider_4" id="WP" >
                 <span class="description"><?php esc_html_e('WP.'); ?></span>
             </td>
         </tr>
@@ -79,7 +95,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Photoshop skills in % of perfection"><?php esc_html_e('Photoshop skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="Photoshop" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_5" id="Photoshop" value="<?php echo esc_attr(get_the_author_meta('Photoshop', $user->ID)); ?>">
+                <input type="range" name="Photoshop" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('Photoshop', $user->ID)); ?>" class="my_slider_5" id="Photoshop" >
                 <span class="description"><?php esc_html_e('Photoshop.'); ?></span>
             </td>
         </tr>
@@ -87,7 +103,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Php skills in % of perfection"><?php esc_html_e('Php skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="PHP" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_6" id="PHP" value="<?php echo esc_attr(get_the_author_meta('PHP', $user->ID)); ?>">
+            <input type="range" name="PHP" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('PHP', $user->ID)); ?>" class="my_slider_6" id="Indesign" >
                 <span class="description"><?php esc_html_e('Php.'); ?></span>
             </td>
         </tr>
@@ -95,7 +111,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Indesign skills in % of perfection"><?php esc_html_e('Indesign skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="Indesign" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_7" id="Indesign" value="<?php echo esc_attr(get_the_author_meta('Indesign', $user->ID)); ?>">
+                <input type="range" name="Indesign" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('Indesign', $user->ID)); ?>" class="my_slider_7" id="Indesign" >
                 <span class="description"><?php esc_html_e('Indesign.'); ?></span>
             </td>
         </tr>
@@ -103,7 +119,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Photography skills in % of perfection"><?php esc_html_e('Photography skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="Photography" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_8" id="Photography" value="<?php echo esc_attr(get_the_author_meta('Photography', $user->ID)); ?>">
+                <input type="range" name="Photography" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('Photography', $user->ID)); ?>" class="my_slider_8" id="Photography" >
                 <span class="description"><?php esc_html_e('Photography.'); ?></span>
             </td>
         </tr>
@@ -119,7 +135,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Random skills in % of perfection"><?php esc_html_e('Random skills in % of perfection'); ?></label></th>
             <td>
-                <input type="range" name="Random" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="0" class="my_slider_9" id="Random" value="<?php echo esc_attr(get_the_author_meta('Random', $user->ID)); ?>">
+                <input type="range" name="Random" onchange="this.setAttribute('value',this.value);" min="0" max="100" value="<?php echo esc_attr(get_the_author_meta('Random', $user->ID)); ?>" class="my_slider_9" id="Random" >
                 <span class="description"><?php esc_html_e('Random.'); ?></span>
             </td>
         </tr>
@@ -127,8 +143,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="about"><?php esc_html_e('add info about yourself'); ?></label></th>
             <td>
-                <textarea rows="10" cols="50" id="about" name="about">
-        </textarea>
+                <textarea  rows="10" cols="50"  type="text" id="about" name="about" class="regular-text">  <?php echo esc_attr( get_the_author_meta( 'about', $user->ID ) ); ?></textarea>        
                 <span class="description"><?php esc_html_e('Please write something.'); ?></span>
             </td>
         </tr>
@@ -136,7 +151,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="story"><?php esc_html_e('Story of you'); ?></label></th>
             <td>
-                <textarea rows="10" cols="50" id="story" name="story">
+                <textarea rows="10" cols="50" name="story" id="story"> <?php echo esc_attr(get_the_author_meta('story', $user->ID)); ?>
         </textarea>
                 <span class="description"><?php esc_html_e('Story of you.'); ?></span>
             </td>
@@ -145,7 +160,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="the_truth"><?php esc_html_e('About your skills'); ?></label></th>
             <td>
-                <textarea rows="10" cols="50" id="the_truth" name="the_truth">
+                <textarea rows="10" cols="50" id="the_truth"  name="the_truth"><?php echo esc_attr(get_the_author_meta('the_truth', $user->ID)); ?>
         </textarea>
                 <span class="description"><?php esc_html_e('Story of you.'); ?></span>
             </td>
@@ -154,7 +169,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Your_past"><?php esc_html_e('Your past 2000-now'); ?></label></th>
             <td>
-                <textarea rows="10" cols="50" id="Your_past" name="Your_past">
+                <textarea rows="10" cols="50" id="Your_past" name="Your_past"><?php echo esc_attr(get_the_author_meta('Your_past', $user->ID)); ?>
         </textarea>
                 <span class="description"><?php esc_html_e('Millenium.'); ?></span>
             </td>
@@ -163,7 +178,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Your_past_2"><?php esc_html_e('Your past 1990-2000'); ?></label></th>
             <td>
-                <textarea rows="10" cols="50" id="Your_past_2" name="Your_past_2">
+                <textarea rows="10" cols="50" id="Your_past_2"  name="Your_past_2"><?php echo esc_attr(get_the_author_meta('Your_past_2', $user->ID)); ?>
         </textarea>
                 <span class="description"><?php esc_html_e('Nineties.'); ?></span>
             </td>
@@ -171,7 +186,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Your_past_1"><?php esc_html_e('Your past 1980-1990'); ?></label></th>
             <td>
-                <textarea rows="10" cols="50" id="Your_past_1" name="Your_past_1">
+                <textarea rows="10" cols="50" id="Your_past_1" name="Your_past_1"> <?php echo esc_attr(get_the_author_meta('Your_past_1', $user->ID)); ?>
         </textarea>
                 <span class="description"><?php esc_html_e('Eighties.'); ?></span>
             </td>
@@ -188,7 +203,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Education_1"><?php esc_html_e('Education 2010'); ?></label></th>
             <td>
-                <input type="text" name="Education_1" id="Education_1" value="<?php echo esc_attr(get_the_author_meta('Education 2010', $user->ID)); ?>" class="regular-text" /><br />
+                <input type="text" name="Education_1" id="Education_1" value="<?php echo esc_attr(get_the_author_meta('Education_1', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Education 2010.'); ?></span>
             </td>
         </tr>
@@ -197,7 +212,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Education_2"><?php esc_html_e('Education 2000'); ?></label></th>
             <td>
-                <input type="text" name="Education_2" id="Education_2" value="<?php echo esc_attr(get_the_author_meta('Education 2000', $user->ID)); ?>" class="regular-text" /><br />
+                <input type="text" name="Education_2" id="Education_2" value="<?php echo esc_attr(get_the_author_meta('Education_2', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Education 2000.'); ?></span>
             </td>
         </tr>
@@ -205,7 +220,7 @@ function extra_user_profile_fields($user)
         <tr>
             <th><label for="Education_3"><?php esc_html_e('Education 1990'); ?></label></th>
             <td>
-                <input type="text" name="Education_3" id="Education_3" value="<?php echo esc_attr(get_the_author_meta('Education 1990', $user->ID)); ?>" class="regular-text" /><br />
+                <input type="text" name="Education_3" id="Education_3" value="<?php echo esc_attr(get_the_author_meta('Education_3', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Education 1990.'); ?></span>
             </td>
         </tr>
@@ -263,6 +278,8 @@ function save_extra_user_profile_fields($user_id)
     }
 
     update_user_meta($user_id, 'link_to_git', $_POST['link_to_git']);
+    update_user_meta($user_id, 'link_to_linkedin', $_POST['link_to_linkedin']);
+    update_user_meta($user_id, 'E-mail-2', $_POST['E-mail-2']);
     update_user_meta($user_id, 'link_to_website', $_POST['link_to_website']);
     update_user_meta($user_id, 'Phone_number', $_POST['Phone_number']);
     update_user_meta($user_id, 'E-mail', $_POST['E-mail']);
@@ -272,6 +289,8 @@ function save_extra_user_profile_fields($user_id)
     update_user_meta($user_id, 'WP', $_POST['WP']);
     update_user_meta($user_id, 'Photoshop', $_POST['Photoshop']);
     update_user_meta($user_id, 'Indesign', $_POST['Indesign']);
+    update_user_meta($user_id, 'PHP', $_POST['PHP']);
+    update_user_meta($user_id, 'random_skill_text_field', $_POST['random_skill_text_field']);
     update_user_meta($user_id, 'Photography', $_POST['Photography']);
     update_user_meta($user_id, 'Random', $_POST['Random']);
     update_user_meta($user_id, 'about', $_POST['about']);
