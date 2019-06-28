@@ -8,6 +8,5 @@
 
 get_header(); ?>
 
-<img class="four_img" id="Iso" src="/wp-content/uploads/2019/06/404-410x410.jpg">
-
+<img class="four_img" id="Iso" src="/wp-content/themes/summer-theme/src/header/404-410x410.png">
 <?php get_footer(); ?>

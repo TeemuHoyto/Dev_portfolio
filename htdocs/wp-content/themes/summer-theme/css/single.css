@@ -1,3 +1,6 @@
+body{
+    overflow-x:hidden;
+}
 .maincontainer_single {
     color:white;
     font-family: 'Raleway', sans-serif;
@@ -22,20 +25,68 @@ color:white;
 
 .single_title{
     font-family: 'Raleway', sans-serif;
-    font-size: 4em;
+    font-size: 6em;
    color:white;
     text-align: center;
     margin-top:1em;
+    margin-bottom:1em;
+}
+.single_p{
+    margin-top:3em;
+    margin-bottom:3em;
 }
 .single_content{
-    width:60vw;
+    width:75vw;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
    color:white;
     text-align: center;
     display: inline-block;
+}
+.single_mid_heading{
+    margin-top:1.5em;
+    margin-bottom:1.5em;
+}
+.single_p_top{
+    margin-left:1em;
+    margin-right:1em;
 }
 .single_content img{
     height:auto;
     display: inline-block;
 }
+.wp-block-image.is-resized{
+    margin:0em;
+}
+.wp-block-column{
+    margin-bottom:0px;
+    height:auto;
+}
+.single_center_p{
+    padding:20%;
+    text-align: center;
+}
+.single_nettisivu
+{
+    color: rgb(30, 180, 240);
+    margin:3em;
+    text-align: center;
+}
+.single_h2{
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+@media only screen and (max-width: 1000px) {
+    .has-2-columns{
+        display: inline-block;
+    }
+    .single_content{
+        width:90vw;
+    }
+    .single_image{
+        align-content: center;
+    }
+} 
+@media only screen and (max-width: 500px) {
+
+} 
