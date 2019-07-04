@@ -12,8 +12,9 @@ $user_id = $user_info->ID;
 $user_slug = 'user_' . $user_id;
 $data = get_user_meta($user_id);
 
-
+if(!empty($data['first_name'][0])){
 ?>
+
 <div class="main_container_author">
     <h2 class="author_name"> <?php echo $data['first_name'][0] . " " . $data['last_name'][0]; ?></h2>
     <p class="author_species"> <?php echo $data['tag_line'][0] ?></p>
@@ -22,20 +23,20 @@ $data = get_user_meta($user_id);
     <div class="links_container_author_master">
         <div class="links_container_author_left">
         <a class="author_link_to" href="<?php echo $data['link_to_linkedin'][0]; ?>">
-                <p class="author_p_field">  Linkedin  &#127803;</p>
+                <p class="author_p_field">  <?php echo $data['link_nro_3'][0]; ?>  &#127803;</p>
             </a><br>
             <a class="author_link_to" href="mailto:<?php echo $data['E-mail-2'][0]; ?>">
                 <p class="author_p_field">  <?php echo $data['E-mail-2'][0]; ?> &#64;</p>
             </a><br>
             <a class="author_link_to" href="<?php echo $data['link_to_website'][0]; ?>">
-                <p class="author_p_field"> Website &#127808; </p>
+                <p class="author_p_field"> <?php echo $data['link_nro_2'][0]; ?> &#127808; </p>
             </a>
 
         </div>
         
         <div class="links_container_author">
             <a class="author_link_to" href="<?php echo $data['link_to_git'][0]; ?>">
-                <p class="author_p_field"> &#128218; Git</p>
+                <p class="author_p_field"> &#128218; <?php echo $data['link_nro_1'][0]; ?></p>
             </a><br>
             <a class="author_link_to" href="mailto:<?php echo $data['E-mail'][0]; ?>">
                 <p class="author_p_field"> &#64; <?php echo $data['E-mail'][0]; ?></p>
@@ -46,6 +47,8 @@ $data = get_user_meta($user_id);
 
         </div>
     </div>
+<?php } 
+if(!empty($data['Text_of_choise_2'][0])){?>
     <h3 class="h3_title_user_megatitle">ABOUT ME</h3>
 <div class="text_container_author_master">
     <div class="links_container_author_left">
@@ -100,6 +103,8 @@ $data = get_user_meta($user_id);
 </div>
  
  <?php
+} 
+
 
 
         get_footer();

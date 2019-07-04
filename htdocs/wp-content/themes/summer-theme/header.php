@@ -4,7 +4,6 @@
 <html>
 
 <head>
-    <nav class="top-ar"> <a class="siteTitle" href="<?php echo home_url(); ?>"><?php echo get_bloginfo('name') ?></a></nav>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>WPSUMMERPROJECT</title>
@@ -17,8 +16,11 @@
 
     <main>
         <div class="main_nav">
-            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-            <?php
+        <nav class="top-ar"> <a class="siteTitle" href="<?php echo home_url(); ?>"><?php echo get_bloginfo('name') ?></a></nav>
+
+        <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+        </div>
+           <?php
 
 
 if ( has_post_thumbnail() ) {

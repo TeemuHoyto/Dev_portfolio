@@ -10,37 +10,73 @@ add_action('edit_user_profile', 'extra_user_profile_fields');
 
 function extra_user_profile_fields($user)
 { ?>
-    <h3><?php esc_html_e('Tell me more of yourself', 'blank'); ?></h3>
+    <h3 class="more_details">Tell the internet more of yourself</h3>
 
     <table class="form-table">
+
         <tr>
-            <th><label for="tag_line"><?php esc_html_e('Tagline'); ?></label></th>
+            <th>
+            <td>
+                <hr>
+                <h2 class="more_details_two">This section contains links to your website and social media</h2>
+                <hr>
+            </td>
+            </th>
+        </tr>
+
+        <tr>
+            <th><label for="tag_line"><?php esc_html_e('Tagline for you'); ?></label></th>
             <td>
                 <input type="text" name="tag_line" id="tag_line" value="<?php echo esc_attr(get_the_author_meta('tag_line', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Please enter your Tagline.'); ?></span>
             </td>
         </tr>
+
         <tr>
-            <th><label for="link_to_git"><?php esc_html_e('Git'); ?></label></th>
+            <th><label for="link_nro_1"><?php esc_html_e('Link name'); ?></label></th>
+            <td>
+                <input type="text" name="link_nro_1" id="link_nro_1" value="<?php echo esc_attr(get_the_author_meta('link_nro_1', $user->ID)); ?>" class="regular-text" /><br />
+                <span class="description"><?php esc_html_e('Please enter a name for your link.'); ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="link_to_git"><?php esc_html_e('Link address'); ?></label></th>
             <td>
                 <input type="text" name="link_to_git" id="link_to_git" value="<?php echo esc_attr(get_the_author_meta('link_to_git', $user->ID)); ?>" class="regular-text" /><br />
-                <span class="description"><?php esc_html_e('Please enter your Git.'); ?></span>
+                <span class="description"><?php esc_html_e('Link address.'); ?></span>
             </td>
         </tr>
 
         <tr>
-            <th><label for="link_to_website"><?php esc_html_e('Website'); ?></label></th>
+            <th><label for="link_nro_2"><?php esc_html_e('Link name'); ?></label></th>
+            <td>
+                <input type="text" name="link_nro_2" id="link_nro_2" value="<?php echo esc_attr(get_the_author_meta('link_nro_2', $user->ID)); ?>" class="regular-text" /><br />
+                <span class="description"><?php esc_html_e('Please enter a name for your link.'); ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="link_to_website"><?php esc_html_e('Link address'); ?></label></th>
             <td>
                 <input type="text" name="link_to_website" id="link_to_website" value="<?php echo esc_attr(get_the_author_meta('link_to_website', $user->ID)); ?>" class="regular-text" /><br />
-                <span class="description"><?php esc_html_e('Please enter your Website.'); ?></span>
+                <span class="description"><?php esc_html_e('Link address.'); ?></span>
             </td>
         </tr>
 
         <tr>
-            <th><label for="link_to_linkedin"><?php esc_html_e('linkedin'); ?></label></th>
+            <th><label for="link_nro_3"><?php esc_html_e('Link name'); ?></label></th>
+            <td>
+                <input type="text" name="link_nro_3" id="link_nro_3" value="<?php echo esc_attr(get_the_author_meta('link_nro_3', $user->ID)); ?>" class="regular-text" /><br />
+                <span class="description"><?php esc_html_e('Please enter a name for your link.'); ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="link_to_linkedin"><?php esc_html_e('Link address'); ?></label></th>
             <td>
                 <input type="text" name="link_to_linkedin" id="link_to_linkedin" value="<?php echo esc_attr(get_the_author_meta('link_to_linkedin', $user->ID)); ?>" class="regular-text" /><br />
-                <span class="description"><?php esc_html_e('Please enter your linkedin.'); ?></span>
+                <span class="description"><?php esc_html_e('Link address.'); ?></span>
             </td>
         </tr>
 
@@ -53,7 +89,7 @@ function extra_user_profile_fields($user)
         </tr>
 
         <tr>
-            <th><label for="E-mail-2"><?php esc_html_e('E-mail-2'); ?></label></th>
+            <th><label for="E-mail-2"><?php esc_html_e('E-mail'); ?></label></th>
             <td>
                 <input type="text" name="E-mail-2" id="E-mail-2" value="<?php echo esc_attr(get_the_author_meta('E-mail-2', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Please enter another E-mail.'); ?></span>
@@ -61,11 +97,21 @@ function extra_user_profile_fields($user)
         </tr>
 
         <tr>
-            <th><label for="E-mail"><?php esc_html_e('E-mail'); ?></label></th>
+            <th><label for="E-mail"><?php esc_html_e('E-mail-2'); ?></label></th>
             <td>
                 <input type="text" name="E-mail" id="E-mail" value="<?php echo esc_attr(get_the_author_meta('E-mail', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Please enter your E-mail.'); ?></span>
             </td>
+        </tr>
+
+        <tr>
+            <th>
+            <td>
+                <hr>
+                <h2 class="more_details_two">Choose the skill level you possess using the sliders as your tool</h2>
+                <hr>
+            </td>
+            </th>
         </tr>
 
         <tr>
@@ -213,9 +259,19 @@ function extra_user_profile_fields($user)
         </tr>
 
         <tr>
-            <th><label for="Text_of_choise_2"><?php esc_html_e('Label of your choise'); ?></label></th>
+            <th>
             <td>
-                <input type="text" name="Text_of_choise_2" id="Text_of_choise_1" value="<?php echo esc_attr(get_the_author_meta('Text_of_choise_2', $user->ID)); ?>" class="regular-text" /><br />
+                <hr>
+                <h2 class="more_details_two">This section contains info about you and your skills</h2>
+                <hr>
+            </td>
+            </th>
+        </tr>
+
+        <tr>
+            <th><label for="Text_of_choise_1"><?php esc_html_e('Label of your choise'); ?></label></th>
+            <td>
+                <input type="text" name="Text_of_choise_1" id="Text_of_choise_1" value="<?php echo esc_attr(get_the_author_meta('Text_of_choise_1', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Label of your choise.'); ?></span>
             </td>
         </tr>
@@ -229,9 +285,9 @@ function extra_user_profile_fields($user)
         </tr>
 
         <tr>
-            <th><label for="Text_of_choise_1"><?php esc_html_e('Label of your choise'); ?></label></th>
+            <th><label for="Text_of_choise_2"><?php esc_html_e('Label of your choise'); ?></label></th>
             <td>
-                <input type="text" name="Text_of_choise_1" id="Text_of_choise_1" value="<?php echo esc_attr(get_the_author_meta('Text_of_choise_1', $user->ID)); ?>" class="regular-text" /><br />
+                <input type="text" name="Text_of_choise_2" id="Text_of_choise_2" value="<?php echo esc_attr(get_the_author_meta('Text_of_choise_2', $user->ID)); ?>" class="regular-text" /><br />
                 <span class="description"><?php esc_html_e('Label of your choise.'); ?></span>
             </td>
         </tr>
@@ -240,7 +296,7 @@ function extra_user_profile_fields($user)
             <th><label for="story"><?php esc_html_e('Story of you'); ?></label></th>
             <td>
                 <textarea rows="10" cols="50" name="story" id="story"> <?php echo esc_attr(get_the_author_meta('story', $user->ID)); ?>
-            </textarea>
+                                </textarea>
                 <span class="description"><?php esc_html_e('Story of you.'); ?></span>
             </td>
         </tr>
@@ -274,12 +330,11 @@ function extra_user_profile_fields($user)
             <th><label for="the_truth"><?php esc_html_e('About your skills'); ?></label></th>
             <td>
                 <textarea rows="10" cols="50" id="the_truth" name="the_truth"><?php echo esc_attr(get_the_author_meta('the_truth', $user->ID)); ?>
-            </textarea>
+                                </textarea>
                 <span class="description"><?php esc_html_e('Story of you.'); ?></span>
             </td>
         </tr>
 
-        <hr>
 
         <tr>
             <th><label for="Education_1"><?php esc_html_e('Education most recent'); ?></label></th>
@@ -293,7 +348,7 @@ function extra_user_profile_fields($user)
             <th><label for="Your_past"><?php esc_html_e('About your most recent education'); ?></label></th>
             <td>
                 <textarea rows="10" cols="50" id="Your_past" name="Your_past"><?php echo esc_attr(get_the_author_meta('Your_past', $user->ID)); ?>
-            </textarea>
+                                </textarea>
                 <span class="description"><?php esc_html_e('Education.'); ?></span>
             </td>
         </tr>
@@ -310,7 +365,7 @@ function extra_user_profile_fields($user)
             <th><label for="Your_past_1"><?php esc_html_e('What you have done to teach yourself ? ? ?'); ?></label></th>
             <td>
                 <textarea rows="10" cols="50" id="Your_past_1" name="Your_past_1"><?php echo esc_attr(get_the_author_meta('Your_past_1', $user->ID)); ?>
-            </textarea>
+                                </textarea>
                 <span class="description"><?php esc_html_e('What you have done to teach yourself ? ? ?'); ?></span>
             </td>
         </tr>
@@ -327,9 +382,19 @@ function extra_user_profile_fields($user)
             <th><label for="Your_past_2"><?php esc_html_e('Other education'); ?></label></th>
             <td>
                 <textarea rows="10" cols="50" id="Your_past_2" name="Your_past_2"> <?php echo esc_attr(get_the_author_meta('Your_past_2', $user->ID)); ?>
-            </textarea>
+                                </textarea>
                 <span class="description"><?php esc_html_e('Other education.'); ?></span>
             </td>
+        </tr>
+
+        <tr>
+            <th>
+            <td>
+                <hr>
+                <h2 class="more_details_two">This section should show an image of you to the world</h2>
+                <hr>
+            </td>
+            </th>
         </tr>
 
         <tr>
@@ -409,6 +474,10 @@ function save_extra_user_profile_fields($user_id)
     update_user_meta($user_id, 'skill_name_6', $_POST['skill_name_6']);
     update_user_meta($user_id, 'skill_name_7', $_POST['skill_name_7']);
     update_user_meta($user_id, 'skill_name_8', $_POST['skill_name_8']);
+    update_user_meta($user_id, 'link_nro_1', $_POST['link_nro_1']);
+    update_user_meta($user_id, 'link_nro_2', $_POST['link_nro_2']);
+    update_user_meta($user_id, 'link_nro_3', $_POST['link_nro_3']);
+
     update_user_meta($user_id, 'Text_of_choise_1', $_POST['Text_of_choise_1']);
     update_user_meta($user_id, 'Text_of_choise_2', $_POST['Text_of_choise_2']);
     update_user_meta($user_id, 'Text_of_choise_3', $_POST['Text_of_choise_3']);

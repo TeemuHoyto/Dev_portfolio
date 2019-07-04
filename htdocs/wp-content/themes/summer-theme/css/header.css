@@ -5,17 +5,21 @@
 .top-ar {
     background-color: rgb(32, 32, 32);
     color: white;
-    font-size: 2.5em;
+  
     border-bottom: 1px solid rgb(30, 180, 240);
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    text-align: center;
+   
 }
 
 .siteTitle,
 .siteTitle:active,
 .siteTitle:hover {
     color: white;
+
+    font-size:1.2em;
+    left:2em;
+    top:0.5em;
 }
 
 .header_img {
