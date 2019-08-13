@@ -65,14 +65,14 @@ if(!empty($data['Text_of_choise_2'][0])){?>
 <br>
 
 <div class="master_conteiner_progress_bar">
-    <div class="bar_1" style=' width: <?php echo $data['HTML'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_1'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['HTML'][0]?>%</p></div>
-    <div class="bar_2" style=' width: <?php echo $data['CSS'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_2'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['CSS'][0]?>%</p></div>
+    <div class="bar_1" style=' width: <?php echo $data['CSS'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_1'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['HTML'][0]?>%</p></div>
+    <div class="bar_2" style=' width: <?php echo $data['HTML'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_2'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['CSS'][0]?>%</p></div>
     <div class="bar_3" style=' width: <?php echo $data['JS'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_3'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['JS'][0]?>%</p></div>
-    <div class="bar_4" style=' width: <?php echo $data['PHP'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_4'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['PHP'][0]?>%</p></div>
-    <div class="bar_5" style=' width: <?php echo $data['WP'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_5'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['WP'][0]?>%</p></div>
-    <div class="bar_6" style=' width: <?php echo $data['Photography'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_6'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['Photography'][0]?>%</p></div>
+    <div class="bar_4" style=' width: <?php echo $data['WP'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_4'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['PHP'][0]?>%</p></div>
+    <div class="bar_5" style=' width: <?php echo $data['Photoshop'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_5'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['WP'][0]?>%</p></div>
+    <div class="bar_6" style=' width: <?php echo $data['PHP'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_6'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['Photography'][0]?>%</p></div>
     <div class="bar_7" style=' width: <?php echo $data['Indesign'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_7'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['Indesign'][0]?>%</p></div>
-    <div class="bar_8" style=' width: <?php echo $data['Photoshop'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_8'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['Photoshop'][0]?>%</p></div>
+    <div class="bar_8" style=' width: <?php echo $data['Photography'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['skill_name_8'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['Photoshop'][0]?>%</p></div>
     <div class="bar_9" style=' width: <?php echo $data['Random'][0] ?>% ;'><p class="p_user_progress_bar_name"><?php echo $data['random_skill_text_field'][0]?></p><p class="p_user_progress_bar_number"><?php echo $data['Random'][0]?>%</p></div>
 </div>
 

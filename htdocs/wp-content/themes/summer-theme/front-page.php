@@ -3,12 +3,16 @@
  * The main template file.
  */
 
-get_header(); ?>
+get_header();
+
+$query = new WP_Query( array ( 'orderby' => 'rand', 'posts_per_page' => '-1' ) );
+   
+?>
 
 
 <div class="maincontainer">
-    <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
+    <?php if ($query->have_posts()) : ?>
+        <?php while ($query->have_posts()) : $query->the_post(); ?>
 
             <ul class="post_in_ul"  >
 
