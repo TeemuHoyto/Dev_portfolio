@@ -30,3 +30,21 @@
   width:50vw;
   height:auto;
 }
+.form-table{
+  align-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+
+}
+.more_details{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 4em;
+}
+.more_details_two{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-align: left;
+  font-size: 2.5em;
+}

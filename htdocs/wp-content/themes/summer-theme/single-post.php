@@ -9,9 +9,6 @@
                                 <?php the_content() ?>
                 </div>
 </div>
-                <div class="link_single">
-                        <?php previous_post_link(); ?>  -  <?php next_post_link(); ?>
-                </div>
                 
         <?php endwhile; ?>
 <?php endif; ?>

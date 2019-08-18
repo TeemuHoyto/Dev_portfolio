@@ -44,7 +44,7 @@ add_theme_support('post-thumbnails');
 
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
-    add_image_size( 'HD', 1920, 600, true ); // (cropped)
+    add_image_size( 'HD', 1920, 1280, true ); // (cropped)
 }
 
 /*
