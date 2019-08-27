@@ -12,7 +12,7 @@ Tags: Best theme ever
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200&display=swap');
 
 body {
     background: rgb(12, 12, 12);
@@ -61,6 +61,7 @@ a {
     padding-top:3em;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    font-size: 1em;
 }
 
 #an_a_container {
@@ -84,6 +85,7 @@ a {
     margin-bottom: 0em;
 }
 
+
 .post_title_on_image {
     font-family: 'Raleway', sans-serif;
     position: absolute;
@@ -91,17 +93,14 @@ a {
     right: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    -webkit-text-stroke: 1px black;
+    
     color: white;
     text-shadow:
-        3px 3px 0 #000,
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-       -1px 1px 0 #000,
-        1px 1px 0 #000;
-    
+       -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
-
 .post-categories {
     text-align: center;
     font-size: 2em;
@@ -112,12 +111,6 @@ a {
     position: relative;
     overflow-y: hidden;
 }
-
-.post_in_ul .post_title_on_image{
-    overflow-y: hidden;
-    filter:blur(0px);
-}
-
 
 .post_in_ul:hover .post_exerpt_to_show {
     opacity: 1;
@@ -136,10 +129,21 @@ h1 {
 
 p {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 h2 {
     text-align: center;
     font-size: 2em;
+}
+@media only screen and (max-width: 1000px) {
+    .maincontainer {
+        column-count: 1;
+        column-gap: 0px;
+        column-rule: none;
+    }
+
+    .post_exerpt_to_show p {
+        font-size: 2em;
+    }
 }

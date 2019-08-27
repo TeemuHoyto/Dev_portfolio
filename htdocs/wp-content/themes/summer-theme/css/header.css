@@ -21,9 +21,31 @@
   left:2em;
   top:0.5em;
 }
-
+.header_arrow{
+    position: absolute;
+    height:400px;
+    width:auto;
+    bottom: 1em;
+    right: 40%;
+    left: 40%; 
+    animation: pulse 1s infinite;
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    
+}
 .header_img {
   width: 100vw;
   height:100vh;
   object-fit: cover;
 }
+
+@keyframes pulse {
+  0% {
+    bottom:1em;
+    opacity:0.2;
+  }
+  100% {
+    bottom:3em;
+    opacity:0.8;
+  }}

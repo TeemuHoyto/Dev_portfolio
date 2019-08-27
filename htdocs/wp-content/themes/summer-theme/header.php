@@ -22,11 +22,12 @@
 if ( has_post_thumbnail() ) {
     $header_image = get_the_post_thumbnail_url( $post->ID, 'HD' );
 } else {
-    $header_image = '/wp-content/themes/summer-theme/src/header/Rododendron.jpg';
+    $header_image = '/wp-content/themes/portfolio/src/header/Rododendron.jpg';
+    
 }
 ?>
     <img class="header_img" id="Iso" src="<?php echo $header_image  ?>">
-
+<img class="header_arrow" id="Iso" src="/wp-content/themes/portfolio/src/header/nuoli.svg">
         </div>
         <?php
         wp_head();
