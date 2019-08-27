@@ -26,7 +26,7 @@
     height:400px;
     width:auto;
     bottom: 1em;
-    right: 40%;
+    right: 40vw;
     left: 40%; 
     animation: pulse 1s infinite;
     animation-timing-function: ease-out; 
@@ -36,16 +36,16 @@
 }
 .header_img {
   width: 100vw;
-  height:100vh;
+  height:88vh;
   object-fit: cover;
 }
 
 @keyframes pulse {
   0% {
-    bottom:1em;
+    bottom:2em;
     opacity:0.2;
   }
   100% {
-    bottom:3em;
+    bottom:7em;
     opacity:0.8;
   }}
