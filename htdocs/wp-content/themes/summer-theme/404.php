@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (Not Found)
  *
- * @subpackage SummerTheme
+ * @subpackage Portfolio-Theme
  * @since 2019
  */
 
